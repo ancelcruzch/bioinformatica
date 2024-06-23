@@ -1,0 +1,51 @@
++-+-+-+-+-+-+-+-+-+-+-+ Distancia Minima +-+-+-+-+-+-+-+-+-+-+-+
+ 	A	B	C	D	
+A	0	0	0	0	
+B	41.6214	0	0	0	
+C	18.0477	36.185	0	0	
+D	30.0218	24.6916	23.8391	0	
+Maximo: 41.6214
+Minimo: 18.0477
+Clusteres: A, B, C, D, 
+
+Nivel K=1
+Clusteres mas proximos: (C,A) -> 18.0477
+Posicion:  [2,0]
+->Matriz quedaria asi: 
+ 	AC	B	D	
+AC	0	0	0	
+B	36.185	0	0	
+D	23.8391	24.6916	0	
+Clusteres: AC, B, D, 
+
+Nivel K=2
+Clusteres mas proximos: (D,AC) -> 23.8391
+Posicion:  [2,0]
+->Matriz quedaria asi: 
+ 	ACD	B	
+ACD	0	0	
+B	24.6916	0	
+Clusteres: ACD, B, 
+
+Nivel K=3
+Clusteres mas proximos: (B,ACD) -> 24.6916
+Posicion:  [1,0]
+->Matriz quedaria asi: 
+ 	ACDB	
+ACDB	
+Clusteres: ACDB, 
+
++-+-+-+-+-+-+-+-+-+-+-+ Matriz Cofenetica +-+-+-+-+-+-+-+-+-+-+-+ 
+ 	A	B	C	D	
+A	0	24.6916	18.0477	23.8391	
+B	24.6916	0	24.6916	24.6916	
+C	18.0477	24.6916	0	23.8391	
+D	23.8391	24.6916	23.8391	0	
+
+Distancias: 41.6214 18.0477 36.185 30.0218 24.6916 23.8391 
+Cofenéticas: 24.6916 18.0477 24.6916 23.8391 24.6916 23.8391 
+Covarianza: 15.3722
+Varianza de distancias: 75.4182
+Varianza de cofenéticas: 6.79552
+
+CCC: 0.679025

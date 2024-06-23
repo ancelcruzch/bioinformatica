@@ -1,0 +1,93 @@
++-+-+-+-+-+-+-+-+-+-+-+ Distancia Minima +-+-+-+-+-+-+-+-+-+-+-+
+ 	A	B	C	D	E	F	G	
+A	0	0	0	0	0	0	0	
+B	41.6214	0	0	0	0	0	0	
+C	18.0477	36.185	0	0	0	0	0	
+D	30.0218	24.6916	23.8391	0	0	0	0	
+E	16.5548	34.0205	6.20885	20.6447	0	0	0	
+F	38.0479	14.3327	34.0057	30.289	32.0851	0	0	
+G	30.8517	20.9177	20.952	10.4742	19.1848	24.7549	0	
+Maximo: 41.6214
+Minimo: 6.20885
+Clusteres: A, B, C, D, E, F, G, 
+
+Nivel K=1
+Clusteres mas proximos: (E,C) -> 6.20885
+Posicion:  [4,2]
+->Matriz quedaria asi: 
+ 	A	B	CE	D	F	G	
+A	0	0	0	0	0	0	
+B	41.6214	0	0	0	0	0	
+CE	16.5548	34.0205	0	0	0	0	
+D	30.0218	24.6916	20.6447	0	0	0	
+F	38.0479	14.3327	32.0851	30.289	0	0	
+G	30.8517	20.9177	19.1848	10.4742	24.7549	0	
+Clusteres: A, B, CE, D, F, G, 
+
+Nivel K=2
+Clusteres mas proximos: (G,D) -> 10.4742
+Posicion:  [5,3]
+->Matriz quedaria asi: 
+ 	A	B	CE	DG	F	
+A	0	0	0	0	0	
+B	41.6214	0	0	0	0	
+CE	16.5548	34.0205	0	0	0	
+DG	30.0218	20.9177	19.1848	0	0	
+F	38.0479	14.3327	32.0851	24.7549	0	
+Clusteres: A, B, CE, DG, F, 
+
+Nivel K=3
+Clusteres mas proximos: (F,B) -> 14.3327
+Posicion:  [4,1]
+->Matriz quedaria asi: 
+ 	A	BF	CE	DG	
+A	0	0	0	0	
+BF	38.0479	0	0	0	
+CE	16.5548	32.0851	0	0	
+DG	30.0218	20.9177	19.1848	0	
+Clusteres: A, BF, CE, DG, 
+
+Nivel K=4
+Clusteres mas proximos: (CE,A) -> 16.5548
+Posicion:  [2,0]
+->Matriz quedaria asi: 
+ 	ACE	BF	DG	
+ACE	0	0	0	
+BF	32.0851	0	0	
+DG	19.1848	20.9177	0	
+Clusteres: ACE, BF, DG, 
+
+Nivel K=5
+Clusteres mas proximos: (DG,ACE) -> 19.1848
+Posicion:  [2,0]
+->Matriz quedaria asi: 
+ 	ACEDG	BF	
+ACEDG	0	0	
+BF	20.9177	0	
+Clusteres: ACEDG, BF, 
+
+Nivel K=6
+Clusteres mas proximos: (BF,ACEDG) -> 20.9177
+Posicion:  [1,0]
+->Matriz quedaria asi: 
+ 	ACEDGBF	
+ACEDGBF	
+Clusteres: ACEDGBF, 
+
++-+-+-+-+-+-+-+-+-+-+-+ Matriz Cofenetica +-+-+-+-+-+-+-+-+-+-+-+ 
+ 	A	B	C	D	E	F	G	
+A	0	20.9177	16.5548	19.1848	16.5548	20.9177	19.1848	
+B	20.9177	0	20.9177	20.9177	20.9177	14.3327	20.9177	
+C	16.5548	20.9177	0	19.1848	6.20885	20.9177	19.1848	
+D	19.1848	20.9177	19.1848	0	19.1848	20.9177	10.4742	
+E	16.5548	20.9177	6.20885	19.1848	0	20.9177	19.1848	
+F	20.9177	14.3327	20.9177	20.9177	20.9177	0	20.9177	
+G	19.1848	20.9177	19.1848	10.4742	19.1848	20.9177	0	
+
+Distancias: 41.6214 18.0477 36.185 30.0218 24.6916 23.8391 16.5548 34.0205 6.20885 20.6447 38.0479 14.3327 34.0057 30.289 32.0851 30.8517 20.9177 20.952 10.4742 19.1848 24.7549 
+Cofenéticas: 20.9177 16.5548 20.9177 19.1848 20.9177 19.1848 16.5548 20.9177 6.20885 19.1848 20.9177 14.3327 20.9177 20.9177 20.9177 19.1848 20.9177 19.1848 10.4742 19.1848 20.9177 
+Covarianza: 28.9972
+Varianza de distancias: 87.8135
+Varianza de cofenéticas: 15.0844
+
+CCC: 0.796732
